@@ -10,6 +10,7 @@ html {
     line-height: 1.5;
     color: #111;
     padding: 24px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -79,27 +80,40 @@ p,
 ol,
 ul,
 dl,
-table,
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.odd {
+    background-color: whitesmoke;
+}
+
+th {
+    text-align: left;
+}
 address,
 figure {
     margin: 0 0 24px;
 }
 
 ul,
-ol,
+ol{
+    padding-left:  24px;
+}
 blockquote {
 
 }
 
 li ul,
 li ol{
-
+    margin-bottom: 0;
 }
 
 blockquote {
     font-style: italic;
-    font-size: 23px;
-    line-height: 32px;
+    font-size: inherit;
+    line-height: inherit;
     font-family:"Times New Roman", serif;
 }
 
@@ -111,17 +125,20 @@ figcaption {
 }
 
 hr {
-
+    border: 0;
+    height: 1px;
+    background: lightgray;
+    margin: 0 0 24px;
 }
 
 a {
     color: royalBlue;
-    transition:all .1s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    columns: blueviolet;
+    color: blueviolet;
 }
 a:hover,
 a:focus {
@@ -155,7 +172,7 @@ a:focus {
     }
 
     html{
-        padding: 48px;
+        padding: 48px 48px 24px;
     }
 }
 
